@@ -13,16 +13,16 @@ const Video = (props) => {
         </div>
       </div>
       <div className="row justify-content-center mb-4">
-        <div className="col-12 col-md-7">
-          <Webcam className="video-width" audio={true} ref={props.webcamRef} />
+        <div className="col-10 col-md-7 galaxy">
+          <Webcam className="media-width" audio={true} ref={props.webcamRef} />
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-12 col-sm-6 col-md-4">
+        <div className="col-10 col-sm-6 col-md-5">
           {props.capturing ? (
             <Link to="/finish">
               <Button
-                className="btn-block media-btn p-2 stop-btn"
+                className="btn-block media-btn p-0 p-md-2 stop-btn"
                 onClick={props.handleStopCapture}
               >
                 <div className="d-flex justify-content-center">

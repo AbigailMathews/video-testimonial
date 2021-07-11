@@ -8,8 +8,8 @@ function MediaSelect(props) {
   return (
     <Container>
       <Question />
-      <div className="mt-5">
-        <div className="row text-align-center mb-5">
+      <div className="mt-4 mt-md-5">
+        <div className="row justify-content-center text-align-center mb-md-5">
           <div className="col-10 col-sm-4 d-flex">
             <div className="num-circle">1</div>
             <p className="step-text">Choose the recording method.</p>
@@ -25,8 +25,8 @@ function MediaSelect(props) {
             <p className="step-text">Try recording again or submit it.</p>
           </div>
         </div>
-        <div className="row justify-content-center">
-          <div className="col-6 col-md-4">
+        <div className="row justify-content-center mt-2">
+          <div className="col-10 col-md-4 mb-2">
             <Link to="/video">
               <Button
                 className="btn-block media-btn"
@@ -39,7 +39,7 @@ function MediaSelect(props) {
               </Button>
             </Link>
           </div>
-          <div className="col-6 col-md-4">
+          <div className="col-10 col-md-4">
             <Link to="/audio">
               <Button
                 className="btn-block media-btn voice"

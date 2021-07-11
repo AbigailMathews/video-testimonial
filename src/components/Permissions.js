@@ -29,7 +29,7 @@ function Permissions(props) {
             <h1 className="permission-title mt-5">
               Sharing your feedback will help America Talks reach more people
             </h1>
-            <p className="permission-body mt-5">
+            <p className="permission-body mt-4 mt-md-5">
               We'd like to use your video or audio feedback to understand how we
               can improve the America Talks series, and how the program is
               having an impact on participants. Your answers will be shared with
@@ -40,7 +40,7 @@ function Permissions(props) {
               Read more
             </button>
             <div className="row justify-content-center mt-4">
-              <div className="col-6 col-md-4 mt-3">
+              <div className="col-10 col-md-4 mt-md-3">
                 <Link to="/start">
                   <Button
                     variant="primary"

@@ -44,11 +44,11 @@ code {
 .finalize-title {
   color: white;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 3.75em;
 }
 
 .permission-body {
-  font-size: 24px;
+  font-size: 1.4em;
 }
 
 .modal-content {
@@ -67,10 +67,6 @@ code {
   font-weight: 800;
   text-align: left;
   color: white;
-}
-
-.question-container {
-  margin-top: 5rem;
 }
 
 .bold {
@@ -161,7 +157,7 @@ a {
 }
 
 .btn-text {
-  font-size: 1.3em;
+  font-size: 1.4em;
   margin-bottom: 0px;
   margin-top: 1.5px;
 }
@@ -186,7 +182,7 @@ a {
   align-self: baseline;
 }
 
-.video-width {
+.media-width {
   width: 100%;
 }
 
@@ -205,12 +201,128 @@ a {
 }
 
 /* Media Query */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .question,
-  .prompt {
-    text-align: center;
+@media screen and (max-width: 975px) {
+  .permission-title {
+    font-size: 3em;
   }
-  .flex-row {
-    display: unset;
+  .modal-content {
+    padding: 1em;
+    overflow: auto;
+  }
+  .num-circle {
+    width: 2.5em;
+    height: 1.3em;
+    line-height: 50px;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .question,
+  .finalize-title {
+    font-size: 2.25em;
+  }
+  .prompt {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  .num-circle {
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 0px;
+    border-radius: 100%;
+    line-height: 30px;
+    font-size: 1.5em;
+  }
+  .galaxy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .media-width {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .permission-title {
+    font-size: 2em;
+  }
+  .permission-body,
+  .decline {
+    font-size: 1em;
+  }
+  .question,
+  .finalize-title {
+    font-size: 2.25em;
+  }
+  .prompt {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  .num-circle {
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 0px;
+    border-radius: 100%;
+    line-height: 30px;
+    font-size: 1.5em;
+  }
+  .step-text {
+    font-size: 1em;
+  }
+  .button {
+    padding: 6px;
+  }
+  .media-btn {
+    padding: 0.5em;
+  }
+  .btn-text {
+    font-size: 1.3em;
+  }
+  .record-icon {
+    font-size: 2em;
+  }
+  .stop-icon {
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .modal-white {
+    font-size: 1.9em;
+  }
+  .finalize-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .permission-title {
+    font-size: 1.2em;
+  }
+  .permission-body {
+    font-size: 0.8em;
+  }
+  .question,
+  .finalize-title {
+    font-size: 2em;
+  }
+  .button {
+    padding: 5px;
+    font-size: 0.8em;
+  }
+  .prompt,
+  .step-text {
+    font-size: 0.8em;
+  }
+  .media-btn {
+    padding: 0.4em;
+  }
+  .btn-text {
+    font-size: 1em;
+  }
+  .link {
+    font-size: 0.8em;
   }
 }

@@ -13,21 +13,21 @@ const Audio = (props) => {
         </div>
       </div>
       <div className="row justify-content-center mb-2">
-        <div className="col-7">
+        <div className="col-12 col-md-7 galaxy">
           <ReactMic
             record={props.capturing}
-            className="sound-wave"
+            className="sound-wave media-width"
             onStop={() => console.log('stopped recording')}
             onData={(data) => props.handleDataAvailable}
           />
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-4">
+        <div className="col-12 col-md-4">
           {props.capturing ? (
             <Link to="/finish">
               <Button
-                className="btn-block media-btn p-2 stop-btn"
+                className="btn-block media-btn p-0 p-md-2 stop-btn"
                 onClick={props.handleStopCapture}
               >
                 <div className="d-flex justify-content-center">

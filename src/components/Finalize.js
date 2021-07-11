@@ -53,7 +53,7 @@ class Finalize extends Component {
           <div>
             {this.props.mediaType === 'V' ? (
               <video
-                className="video-width"
+                className="media-width"
                 controls
                 src={this.state.url}
                 type="video/webm"
